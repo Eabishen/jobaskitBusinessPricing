@@ -41,6 +41,17 @@
         />
         <link rel="stylesheet" href="css/style.css" />
 
+        <!-- FontAwesome and jQuery -->
+        <script
+            src="https://kit.fontawesome.com/6853311342.js"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"
+        ></script>
+
         <title>Jobaskit's Pricing</title>
     </head>
     <body>
@@ -139,7 +150,7 @@
         <!-- Pricing -->
         <section id="pricing" class="price-cont">
             <div class="container">
-                <div class="row mb-5">
+                <div class="row mb-3">
                     <div
                         class="col-md-8 mx-auto text-center"
                         data-aos="zoom-in"
@@ -153,25 +164,17 @@
                         </p>
                     </div>
                 </div>
-                <div
-                    class="row g-2"
-                    data-aos="fade-in"
-                    data-aos-duration="2000"
-                >
-                    <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="row g-3">
+                    <div
+                        class="col-lg-3 col-sm-6 col-md-6"
+                        data-aos="zoom-in-right"
+                        data-aos-duration="1500"
+                    >
                         <div class="pricing card-effect text-center">
                             <h6 class="pt-4">Monthly</h6>
                             <h1>$25</h1>
                             <hr />
-                            <ul class="list-unstyled mb-4">
-                                <li>
-                                    <i class="bx bxs-circle"></i>
-                                    Lorem, ipsum dolor.
-                                </li>
-                                <li>
-                                    <i class="bx bxs-circle"></i>
-                                    Lorem, ipsum dolor.
-                                </li>
+                            <ul class="list-unstyled">
                                 <li>
                                     <i class="bx bxs-circle"></i>
                                     Lorem, ipsum dolor.
@@ -188,29 +191,22 @@
                             <a class="btn price-btn">Start now</a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div
+                        class="col-lg-3 col-sm-6"
+                        data-aos="zoom-in-right"
+                        data-aos-duration="1500"
+                    >
                         <div
                             class="pricing card-effect text-center main-pricing"
                         >
-                            <div
-                                class="col-12 bg-main text-white recmmond pb-5"
-                            >
-                                <p class="">Recommend</p>
-                            </div>
-                            <h6 class="pt-5">Annual</h6>
+                            <p class="bg-main fw-bold recmmond">Recommended</p>
+
+                            <h6 class="pt-4">Annual</h6>
                             <h1>$50</h1>
                             <hr />
                             <ul class="list-unstyled mb-4">
                                 <li>
                                     <i class="bx bxs-circle"></i>
-                                    Lorem, ipsum dolor asdasdasdasd.
-                                </li>
-                                <li>
-                                    <i class="bx bxs-circle"></i>
-                                    Lorem, ipsum dolor.
-                                </li>
-                                <li>
-                                    <i class="bx bxs-circle"></i>
                                     Lorem, ipsum dolor.
                                 </li>
                                 <li>
@@ -225,7 +221,11 @@
                             <a class="btn price-btn">Start now</a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div
+                        class="col-lg-3 col-sm-6"
+                        data-aos="zoom-in-left"
+                        data-aos-duration="1500"
+                    >
                         <div class="pricing card-effect text-center">
                             <h6 class="pt-4">Advance</h6>
                             <h1>$100</h1>
@@ -235,14 +235,7 @@
                                     <i class="bx bxs-circle"></i>
                                     Lorem, ipsum dolor.
                                 </li>
-                                <li>
-                                    <i class="bx bxs-circle"></i>
-                                    Lorem, ipsum dolor.
-                                </li>
-                                <li>
-                                    <i class="bx bxs-circle"></i>
-                                    Lorem, ipsum dolor.
-                                </li>
+
                                 <li>
                                     <i class="bx bxs-circle"></i>
                                     Lorem, ipsum dolor.
@@ -255,7 +248,11 @@
                             <a class="btn price-btn">Start now</a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div
+                        class="col-lg-3 col-sm-6"
+                        data-aos="zoom-in-left"
+                        data-aos-duration="1500"
+                    >
                         <div class="pricing card-effect text-center">
                             <h6 class="pt-4">Enterprises</h6>
                             <h1>$200</h1>
@@ -277,15 +274,591 @@
                                     <i class="bx bxs-circle"></i>
                                     Lorem, ipsum dolor.
                                 </li>
-                                <li>
-                                    <i class="bx bxs-circle"></i>
-                                    Lorem, ipsum dolor.
-                                </li>
                             </ul>
                             <a class="btn price-btn">Start now</a>
                         </div>
                     </div>
                 </div>
+                <div class="row mt-4 mb-3">
+                    <div class="col-md-12 tooglecont">
+                        <button class="tooglebtn toggle">
+                            Pricing Details
+                            <span class="icon1 icon"
+                                ><i class="bx bx-plus"></i></span
+                            ><span class="icon2 icon is-hidden"
+                                ><i class="bx bx-minus"></i
+                            ></span>
+                        </button>
+                    </div>
+                </div>
+                <table
+                    class="table table-hover table-bordered element is-hidden"
+                    style="
+                        text-align: center;
+                        padding-left: 200px;
+                        padding-right: 200px;
+                        background: linear-gradient(
+                            113deg,
+                            rgba(58, 188, 216, 0.8) 19%,
+                            rgba(54, 97, 174, 0.8) 55%
+                        );
+                        color: white;
+                    "
+                >
+                    <thead>
+                        <tr class="active">
+                            <th style="background: rgb(58, 188, 216)">
+                                <center></center>
+                            </th>
+                            <th class="table-sticky">
+                                <center>
+                                    <h3>Monthly</h3>
+                                    <p class="fw-light">
+                                        Ideal for small operations.
+                                    </p>
+                                </center>
+                            </th>
+                            <th>
+                                <center>
+                                    <h3>Annual</h3>
+                                    <p class="fw-light">
+                                        Perfect for larger operations.
+                                    </p>
+                                </center>
+                            </th>
+                            <th>
+                                <center>
+                                    <h3>Advance</h3>
+                                    <p class="fw-light">
+                                        Perfect for those who want software.
+                                    </p>
+                                </center>
+                            </th>
+                            <th>
+                                <center>
+                                    <h3>Enterprises</h3>
+                                    <p class="fw-light">
+                                        The best fit for larger operations.
+                                    </p>
+                                </center>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><br />Price</td>
+                            <td><h3 class="panel-title price">$399</h3></td>
+                            <td><h3 class="panel-title price">$699</h3></td>
+                            <td><h3 class="panel-title price">$799</h3></td>
+                            <td><h3 class="panel-title price">$1299</h3></td>
+                        </tr>
+                        <tr>
+                            <td
+                                colspan="5"
+                                align="left"
+                                style="padding-left: 20px"
+                                class="active"
+                            >
+                                <b>Website Features</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Responsive design</td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Scales to mobile</td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Contact Form</td>
+                            <td>-</td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Social Media Integration</td>
+                            <td>-</td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Custom Pages</td>
+                            <td>3</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>Storage</td>
+                            <td>2GB</td>
+                            <td>10GB</td>
+                            <td>10GB</td>
+                            <td>50GB</td>
+                        </tr>
+                        <tr>
+                            <td
+                                colspan="5"
+                                align="left"
+                                style="padding-left: 20px"
+                                class="active"
+                            >
+                                <b>Features</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Powerful Analytics</td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>24/7 Support</td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                        </tr>
+                        <!-- <tr>
+                        <td>Free Domain Name</td>
+                        <td>-</td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                        <td>-</td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                    </tr> -->
+                        <!-- <tr>
+                        <td>Free SSL Certificate</td>
+                        <td>-</td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                        <td>-</td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                    </tr> -->
+                        <!-- <tr>
+                        <td>SEO Setup</td>
+                        <td>Basic</td>
+                        <td>Advanced</td>
+                        <td>Basic</td>
+                        <td>Advanced</td>
+                    </tr> -->
+                        <tr>
+                            <td>Free Hosting</td>
+                            <td>6 Months</td>
+                            <td>1 Year</td>
+                            <td>6 Months</td>
+                            <td>1 Year</td>
+                        </tr>
+                        <tr>
+                            <td>Social Media Management</td>
+                            <td>+$60 p/m</td>
+                            <td>+$60 p/m</td>
+                            <td>+$60 p/m</td>
+                            <td>+$60 p/m</td>
+                        </tr>
+                        <tr>
+                            <td>Free Updates</td>
+                            <td>-</td>
+                            <td>For 3 Months</td>
+                            <td>-</td>
+                            <td>For 3 Months</td>
+                        </tr>
+                        <tr>
+                            <td
+                                colspan="5"
+                                align="left"
+                                style="padding-left: 20px"
+                                class="active"
+                            >
+                                <b>Integration</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Wordpress</td>
+                            <td>+$250</td>
+                            <td>+$250</td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                            <td>
+                                <i
+                                    style="color: white"
+                                    class="fa fa-check fa-lg"
+                                ></i>
+                            </td>
+                        </tr>
+                        <!-- <tr>
+                        <td>Woocommerce</td>
+                        <td>+$250</td>
+                        <td>+$250</td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Joomla</td>
+                        <td>+$250</td>
+                        <td>+$250</td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Drupal</td>
+                        <td>+$250</td>
+                        <td>+$250</td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ghost</td>
+                        <td>+$250</td>
+                        <td>+$250</td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Shopify</td>
+                        <td>+$250</td>
+                        <td>+$250</td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Opencart</td>
+                        <td>+$350</td>
+                        <td>+$350</td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Magento</td>
+                        <td>+$350</td>
+                        <td>+$350</td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Prestashop</td>
+                        <td>+$350</td>
+                        <td>+$350</td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>phpBB</td>
+                        <td>+$250</td>
+                        <td>+$250</td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>vBulletin</td>
+                        <td>+$250</td>
+                        <td>+$250</td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Invision Power</td>
+                        <td>+$250</td>
+                        <td>+$250</td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                        <td>
+                            <i
+                                style="color: white"
+                                class="fa fa-check fa-lg"
+                            ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <a
+                                class="btn btn-info"
+                                style="
+                                    margin-top: 10px;
+                                    margin-bottom: 10px;
+                                "
+                                >Order Now</a
+                            >
+                        </td>
+                        <td>
+                            <a
+                                class="btn btn-info"
+                                style="
+                                    margin-top: 10px;
+                                    margin-bottom: 10px;
+                                "
+                                >Order Now</a
+                            >
+                        </td>
+                        <td>
+                            <a
+                                class="btn btn-info"
+                                style="
+                                    margin-top: 10px;
+                                    margin-bottom: 10px;
+                                "
+                                >Order Now</a
+                            >
+                        </td>
+                        <td>
+                            <a
+                                class="btn btn-info"
+                                style="
+                                    margin-top: 10px;
+                                    margin-bottom: 10px;
+                                "
+                                >Order Now</a
+                            >
+                        </td>
+                    </tr> -->
+                    </tbody>
+                </table>
             </div>
         </section>
         <!-- Pricing Ends -->
@@ -357,6 +930,8 @@
             </div>
         </div>
         <!-- Footer Ends -->
+
+        <script src="/js/main.js"></script>
 
         <!-- JavaScript Bundle with Popper -->
         <script
