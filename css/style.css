@@ -377,7 +377,7 @@ section {
         font-size: 1em;
     }
 
-    table h3 {
+    table tr h3 {
         font-size: 10px;
         font-weight: 700;
         text-align: center;
