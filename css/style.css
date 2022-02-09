@@ -159,8 +159,9 @@ section {
 }
 
 #pricing .card-effect p {
-    color: var(--white);
-    font-size: 19px;
+    color: rgba(14, 56, 122, 1);
+    font-size: 22px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -177,8 +178,8 @@ section {
     text-align: center;
     width: 100%;
     border-radius: 0;
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: var(--box-shadow);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 8px rgba(14, 56, 122, 0.5);
 }
 
 #pricing .card-effect .recmmond p {
